@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.element-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 40vh;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.element {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60px;
+    min-height: 20px;
+    margin: 0 10px;
+    color: white;
+    transition: transform 0.3s;
+    will-change: transform;
+}
+
+.element-content {
+    padding: 5px;
+    transform-origin: bottom;
+}
+
+
+.element-value-below {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.sorting {
+    background-color: red;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 200px; /* Set a fixed height for the textarea */
+    overflow-y: scroll; /* Add a vertical scrollbar */
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+input[type="range"] {
+    width: 200px;
+}
+
